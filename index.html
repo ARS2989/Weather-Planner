@@ -1,9 +1,83 @@
 <!DOCTYPE html>
-<html>
-<body>
+<html lang="en">
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website Title</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer>
+      const url = "http://api.openweathermap.org/geo/1.0/direct?q={city name},{state code},{country code}&limit={limit}&appid=b51361fd06bf760a9892db36cbb10fbe";
+      const result = fetch(url);
+      console.log(result);
+    </script>
+</head>
+
+<header>
+    <h2>Weather Friend - Know Before You Go</h2>
+</header>
+
+<section>
+    <nav>
+        <h3>Search Your Next City:</h3>
+        <form id="city-search-form">
+            <input type="text" id="city-input" placeholder="Enter a city name">
+            <button type="submit">Search</button>
+        </form>
+        <div id="search-results"></div>
+    </nav>
+</section>
+<body>
+    <div class="separator"></div>
+    <button class="location-btn">Use Current Location</button>
+  </div>
+  <div class="weather-data">
+    <div class="current-weather">
+      <div class="details">
+        <h2>_______ ( ______ )</h2>
+        <h6>Temperature:___°F</h6>
+        <h6>Wind: __ mp/h</h6>
+        <h6>Humidity: __%</h6>
+      </div>
+    </div>
+    <div class="days-forecast">
+      <h2>5-Day Forecast</h2>
+      <ul class="weather-cards">
+        <li class="card">
+          <h3>( ______ )</h3>
+          <h6>Temp:___°F</h6>
+          <h6>Wind: __ mp/h</h6>
+          <h6>Humidity: __%</h6>
+        </li>
+        <li class="card">
+          <h3>( ______ )</h3>
+          <h6>Temp:___°F</h6>
+          <h6>Wind: __ mp/h</h6>
+          <h6>Humidity: __%</h6>
+        </li>
+        <li class="card">
+          <h3>( ______ )</h3>
+          <h6>Temp:___°F</h6>
+          <h6>Wind: __ mp/h</h6>
+          <h6>Humidity: __%</h6>
+        </li>
+        <li class="card">
+          <h3>( ______ )</h3>
+          <h6>Temp:___°F</h6>
+          <h6>Wind: __ mp/h</h6>
+          <h6>Humidity: __%</h6>
+        </li>
+        <li class="card">
+          <h3>( ______ )</h3>
+          <h6>Temp:___°F</h6>
+          <h6>Wind: __ mp/h</h6>
+          <h6>Humidity: __%</h6>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
 
 </body>
 </html>
+</body>

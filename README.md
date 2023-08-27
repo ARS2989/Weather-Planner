@@ -1,6 +1,7 @@
 # Weather-Planner Application
 
-Weather Friend
+##Weather Friend
+
 This is a weather app that allows users to get real-time weather information for their current location or for any location of their choice.
 
 Features
